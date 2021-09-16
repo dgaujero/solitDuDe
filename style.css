@@ -38,6 +38,22 @@
 } */
 
 /* NAVBAR */
+.navWrapper{
+    width: 100%;
+}
+
+/* CARDS */
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.wrapper > div{
+    margin: 20px;
+}
+
 
 .navbar {
     display: flex;
