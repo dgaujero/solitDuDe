@@ -119,13 +119,13 @@ main {
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
-  gap: 64px;
-  align-items: center;
-  padding: 76px max(28px, calc((100vw - var(--max)) / 2)) 88px;
+  gap: 56px;
+  align-items: start;
+  padding: 42px max(28px, calc((100vw - var(--max)) / 2)) 72px;
   border: 0;
   border-radius: 0;
   background:
-    linear-gradient(176deg, var(--bg-soft) 0 78%, var(--bg) 78% 100%);
+    linear-gradient(176deg, var(--bg-soft) 0 84%, var(--bg) 84% 100%);
   box-shadow: none;
 }
 
@@ -142,9 +142,9 @@ main {
 }
 
 .hero-copy h1 {
-  max-width: 690px;
-  font-size: 64px;
-  line-height: 1.05;
+  max-width: 720px;
+  font-size: 56px;
+  line-height: 1.04;
 }
 
 .eyebrow,
@@ -246,6 +246,19 @@ main {
   box-shadow: var(--shadow);
 }
 
+.image-panel {
+  overflow: hidden;
+}
+
+.image-panel img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.65) contrast(1.08);
+}
+
 .panel-label {
   padding: 26px 28px 0;
 }
@@ -329,11 +342,12 @@ main {
 
 .service-card {
   min-height: 305px;
-  padding: 30px;
+  padding: 0 30px 30px;
   border-color: var(--line);
   box-shadow: 0 12px 24px rgba(17, 17, 17, 0.08);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .service-card::before {
@@ -341,8 +355,53 @@ main {
   display: block;
   width: 42px;
   height: 4px;
-  margin-bottom: 24px;
+  margin: 26px 0 24px;
   background: var(--accent);
+}
+
+.service-media {
+  height: 154px;
+  margin: 0 -30px;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 1px solid var(--line);
+  filter: saturate(0.72) contrast(1.04);
+}
+
+.media-web {
+  background-image:
+    linear-gradient(rgba(17, 17, 17, 0.08), rgba(17, 17, 17, 0.16)),
+    url("https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=80");
+}
+
+.media-salesforce {
+  background-image:
+    linear-gradient(rgba(17, 17, 17, 0.08), rgba(17, 17, 17, 0.16)),
+    url("https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80");
+}
+
+.media-integrations {
+  background-image:
+    linear-gradient(rgba(17, 17, 17, 0.08), rgba(17, 17, 17, 0.16)),
+    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80");
+}
+
+.media-automation {
+  background-image:
+    linear-gradient(rgba(17, 17, 17, 0.08), rgba(17, 17, 17, 0.16)),
+    url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80");
+}
+
+.media-security {
+  background-image:
+    linear-gradient(rgba(17, 17, 17, 0.08), rgba(17, 17, 17, 0.16)),
+    url("https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=80");
+}
+
+.media-deployment {
+  background-image:
+    linear-gradient(rgba(17, 17, 17, 0.08), rgba(17, 17, 17, 0.16)),
+    url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?auto=format&fit=crop&w=900&q=80");
 }
 
 .card-kicker {
@@ -536,12 +595,12 @@ main {
 
   .hero {
     gap: 34px;
-    padding-top: 50px;
-    padding-bottom: 62px;
+    padding-top: 34px;
+    padding-bottom: 52px;
   }
 
   .hero-copy h1 {
-    font-size: 42px;
+    font-size: 38px;
   }
 
   .section-heading h2,
