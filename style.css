@@ -545,33 +545,6 @@ main {
   color: #fff;
 }
 
-.site-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 18px;
-  padding: 28px max(28px, calc((100vw - var(--max)) / 2));
-  border-top: 1px solid var(--line);
-  background: var(--bg-panel);
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.site-footer p {
-  max-width: 680px;
-  margin: 0;
-  line-height: 1.55;
-}
-
-.site-footer strong,
-.site-footer a {
-  color: var(--ink);
-}
-
-.site-footer a {
-  border-bottom: 1px solid var(--line-strong);
-}
-
 @media (max-width: 1040px) {
   .topbar {
     align-items: flex-start;
